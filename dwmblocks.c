@@ -181,7 +181,7 @@ int main(int argc, char** argv)
 			writestatus = pstdout;
 	}
 	delimLen = MIN(delimLen, strlen(delim));
-	delim[delimLen++] = '\0';
+	//delim[delimLen++] = '\0';
 	signal(SIGTERM, termhandler);
 	signal(SIGINT, termhandler);
 	statusloop();
